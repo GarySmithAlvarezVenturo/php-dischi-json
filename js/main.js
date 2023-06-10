@@ -1,18 +1,22 @@
-const { createApp } = Vue
+const { createApp } = Vue;
+
 createApp({
     data() {
         return {
-           
-            vinylLists: [],
-        }
+            arrAlbums: [],
+        };
     },
-    created(){
-        axios.get('http://localhost/php-dischi-json/api.php', {
-            params: {
-            }
-        })
-        .then(res => {
-            this.vinylLists = res.data;
-        });
-    }
+    methods: {
+        requestAlbums() {
+            axios.get('http://localhost/php-dischi-json/api.php')
+            .then(response => this.arrAlbums = response.data);
+        },  
+    },
+            
+
+
+
+created() {
+    this.requestAlbums()
+}
 }).mount('#app')

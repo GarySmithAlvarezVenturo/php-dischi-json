@@ -1,63 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dischi Json</title>
-    <!-- Axios CDN -->
-        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <!-- /Axios CDN -->
-    <!-- Vuejs CDN -->
-        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-    <!-- /Vuejs CDN -->
-    <link rel="stylesheet" href="style/style.css">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>PHP Dischi JSON</title>
+	<link rel="stylesheet" href="style/style.css">
 </head>
+
 <body>
-    <div id="app">
-        <header>
-            <a href="#">
-                <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Spotify_icon.svg/991px-Spotify_icon.svg.png" alt="">
-            </a>
-        </header>
-        <main>
-            <div class="vinyls-container container">
-                <div class="vinyl">
-                    <div class="vinyl__image">
-                        <img src="https://images-na.ssl-images-amazon.com/images/I/51sBr4IWDwL.jpg" alt="">
-                    </div>
-                    <div class="vinyl__info">
-                        <h3 class="vinyl__title">New Jersey</h3>
-                        <small class="vinyl__author">Bon Jovi</small>
-                        <h4 class="vinyl__year">1988</h4>
-                    </div>
-                </div>
-
-                <div class="vinyl">
-                    <div class="vinyl__image">
-                        <img src="https://images-na.ssl-images-amazon.com/images/I/51sBr4IWDwL.jpg" alt="">
-                    </div>
-                    <div class="vinyl__info">
-                        <h3 class="vinyl__title">New Jersey</h3>
-                        <small class="vinyl__author">Bon Jovi</small>
-                        <h4 class="vinyl__year">1988</h4>
-                    </div>
-                </div>
-
-                <div class="vinyl">
-                    <div class="vinyl__image">
-                        <img src="https://images-na.ssl-images-amazon.com/images/I/51sBr4IWDwL.jpg" alt="">
-                    </div>
-                    <div class="vinyl__info">
-                        <h3 class="vinyl__title">New Jersey</h3>
-                        <small class="vinyl__author">Bon Jovi</small>
-                        <h4 class="vinyl__year">1988</h4>
-                    </div>
-                </div>
+    <header>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Spotify_icon.svg/232px-Spotify_icon.svg.png" alt="">
+    </header>
+    <div class="app" id="app">
+        <div class="background-dark">
+            <div class="container">
+                <ul>
+                    <li v-for="(album, i) in arrAlbums" :key="i">
+                        <div class="card">
+                            <div class="container">
+                                <div class="picture">
+                                    <img :src="album.img" alt="">
+                                </div>
+                                <span>{{ album.title }}</span>
+                                <span>{{ album.author }}</span>
+                                <span>{{ album.year }}</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
             </div>
-        </main>
+        </div>
     </div>
 
-    <script src="js/main.js"></script>
+  
+                    
+                  
+
+
+
+	<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+	<script src="js/main.js"></script>
 </body>
+
 </html>

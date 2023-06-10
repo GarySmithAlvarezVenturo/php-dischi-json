@@ -1,64 +1,80 @@
-/*RESET*/
 *{
-    box-sizing: border-box;
-    margin: 0;
     padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-body{
-    background-color: #1d2d3c;
-}
-
-/*COMMONS*/
-.container{
-    width: 100%;
-    max-width: 1200px;
-    margin: auto;
-}
-
-/* HEADER*/
 header{
-    background-color: #06131f;
-    padding: .9375rem 6.25rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 8vh;
+    color: white;
+    background-color: #06131F;
+    display: flex;
+    align-items: center;
+    padding-left: 5rem;
 }
 
 header img{
-    width: 50px;
+    width: 40px;
+    height: 40px;
 }
 
-/*MAIN*/
-main {
-    margin-top: 40px;
+.container{
+    max-width: 1200px;
+    margin-inline: auto;
 }
 
-.vinyls-container{
+.background-dark{
+    background-color: #1D2D3C;
+    height: 100vh;
+}
+
+ul{
+    margin-top: 5rem;
+    list-style-type: none;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
+    max-width: 1200px;
+    margin-inline: auto;
+    gap: 1rem;
+    padding-inline: 5rem;
+    padding-bottom: 3rem;
+    padding-top: 3rem; 
 }
 
-.vinyl{
-    width: calc(100% / 3 - 80px);
+li{
+    flex: 0 0 calc(33% - 1rem);
+    height: 350px;
     background-color: #112030;
     text-align: center;
-    padding: 25px 40px;
-    margin: 0 40px;
-    margin-bottom: 3.125rem;
+    border-radius: 5px;
 }
 
-.vinyl .vinyl__image{
-    margin-bottom: 15px;
-}
-
-.vinyl .vinyl__image img{
-    width: 230px;
-    height: 230px;
-}
-
-.vinyl .vinyl__info{
+.card{  
     color: white;
+    border-radius: 5px;
+    padding-top: 2rem;
+    padding-inline: 1.5rem;
 }
 
-.vinyl .vinyl__info .vinyl__author{
-    margin: 8px 0;
-    display: inline-block;
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+picture{
+    width: 196px;
+    height: 196px;
+}
+
+.picture img{
+    width: 196px;
+    width: 196px;
 }

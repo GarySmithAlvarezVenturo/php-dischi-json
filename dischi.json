@@ -1,0 +1,40 @@
+[
+	{
+        "img": "https://i1.sndcdn.com/artworks-000347532198-rw9vak-t240x240.jpg",
+		"title": "Bad",
+        "author": "Michael Jackson" ,
+		"year": "1987"
+	},
+	{
+        "img":
+		 "https://m.media-amazon.com/images/I/71exeiScD8S._UF1000,1000_QL80_.jpg",
+		"title": "The Marshall Mathers LP",
+        "author": "Eminem" ,
+		"year": "2000"
+	},
+	{
+        "img": "https://pyxis.nymag.com/v1/imgs/4d1/f67/b06aff8aea4efab6c67826d960fe54063f-88875114562-MJ-001.w710.jpg",
+		"title": "Elvis Presley",
+        "author": "Elvis Presley" ,
+		"year": "1956"
+	},
+	{
+        "img": "https://m.media-amazon.com/images/I/81PCVNqey5L._UF1000,1000_QL80_.jpg",
+		"title": "Millennium",
+        "author": "Backstreet Boys" ,
+		"year": "1999"
+	},
+	{
+        "img": "https://www.gaytimes.co.uk/wp-content/uploads/2022/02/COVER_-_GoodbyeLullaby.jpg",
+		"title": "Goodbye Lullaby",
+        "author": "Avril Lavigne" ,
+		"year": "2011"
+	},
+	{
+        "img": "https://upload.wikimedia.org/wikipedia/en/7/7b/Alice_Cooper_-_Billion_Dollar_Babies.jpg",
+		"title": "Billion Dollar Babies",
+        "author": "Alice Cooper" ,
+		"year": "1973"
+	}
+	
+]

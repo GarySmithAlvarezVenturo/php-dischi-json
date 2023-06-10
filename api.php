@@ -1,11 +1,7 @@
 <?php
-    // Traduzione da file json ad array php
-    $file_json = file_get_contents('dischi.json');
-    $vinyls = json_decode($file_json, true);
+header('Content-Type: application/json');
 
-    // manipolazione array in variabile php
-
-    // Traduzione da array php a file json
-    header('Content-Type: application/json');
-    echo json_encode($vinyls);
-?>
+if ($_SERVER['REQUEST_METHOD'] == 'GET') {
+	$todos = file_get_contents('dischi.json');
+	echo $todos;
+}
